@@ -7,9 +7,9 @@ import (
 )
 
 type funnel struct {
-	capacity int64     // 最大容量，次
-	rate     float64   // 最大频率，次/s
-	quota    int64     // 剩余容量，次
+	capacity int64     // 最大容量，op
+	rate     float64   // 最大频率，op/s
+	quota    int64     // 剩余容量，op
 	lastTime time.Time // 上次漏水时间
 }
 
